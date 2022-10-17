@@ -8,6 +8,7 @@
 #include "4bandas.h"
 #include "calculo4Bandas.h"
 #include "5bandas.h"
+#include "calculo5Bandas.h"
 
 using namespace std;
 
@@ -15,9 +16,15 @@ using namespace std;
 double tipo4bandas();
 double tipo5Bandas();
 int salirSistema();
+//metodos para 4 bandas
 double calculoMultiplicador(int opcion); // metodo para calcular el multiplicador de la banda
 double concatenacionDeBandas(int banda1, int banda2, double bandaMulti);
 double calculo4bandasConUnidades( double bandasUnidas,int opMedida);
+//metodos para 5 bandas
+double calculoMultiplicador5bandas(int opcion);
+double concatenacionDe5Bandas(int banda1, int banda2,int banda3, double multi);
+double calculo5bandasConUnidades( double bandasUnidas,int opMedida);
+
 //SECCION DE VARIABLES GLOBALES
 
 
@@ -38,12 +45,14 @@ int main(int argc, char const *argv[])
     int controlador7=0; // variable de control para unidad de medida
     int controlador8=0; // variable de control para realizar otra operacion en el menu principal o salir del sistema
     int controlador9=0; // variable de control para la opcion de la banda 3.
+    int controlador10=0; //variable de control del metodo salirSistema
     double bandaMultiplicadora=0; // variable para almacenar banda multiplicadora 
     double opBandaMultiplicadora=0; // variable que almacena opcion de banda multiplicadora
     int tolerancia=0; // variables para almacenar la tolerancia de la resistencia
-    int opMedida=0;
-    string mensajeMedida="";
+    int opMedida=0; // variable que almacena la opcion a elegir de la unidad de medida 
+    string mensajeMedida=""; // variable que despliega la unidad de medida seleccionada por el usuario 
     string subOpc1ion="";
+    string mensajeTolerancia="";
     double resultadoFinal=0;
 
     do
@@ -97,7 +106,7 @@ int main(int argc, char const *argv[])
            system("cls");
         }else
         {
-           cout<<" Opcion no valida, Selecione alguna de las opciones existente";
+           cout<<" Opcion no valida, Selecione alguna de las opciones existente"<<endl;
            controlador2=0;
            tipoBanda=0;
            system("PAUSE");
@@ -114,11 +123,11 @@ int main(int argc, char const *argv[])
          case 2:
                 tipo5Bandas();
             break;
-        //  case 3:
-        //          salirSistema();
-        //     break;
+         case 3:
+                salirSistema();
+            break;
         default:
-                cout<<"error en el switch case opcion no detectada";
+                cout<<"error en el switch case opcion no detectada"<<endl;
             break;
         }
 
