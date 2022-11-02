@@ -36,6 +36,8 @@ using namespace std;
         cout<<"\t\t\t\t\t--8. color gris------------------------------"<<endl;
         cout<<"\t\t\t\t\t--9. color blanco-----------------------------"<<endl;
         cout<<"\t\t\t\t\t----------------------------------------------"<<endl;
+        cout<<"\t\t\t\t\t---------------------------------------     ";
+
         // leyendo y guardando opcion seleccionada
         cin>>banda1;
           if (banda1>=0 && banda1<=9)
@@ -72,6 +74,8 @@ using namespace std;
         cout<<"\t\t\t\t\t--8. color gris-------------------------------"<<endl;
         cout<<"\t\t\t\t\t--9. color blanco-----------------------------"<<endl;
         cout<<"\t\t\t\t\t----------------------------------------------"<<endl;
+        cout<<"\t\t\t\t\t---------------------------------------     ";
+
         // leyendo y guardando opcion seleccionada
         cin>>banda2;
           if (banda2>=0 && banda2<=9)
@@ -109,6 +113,8 @@ using namespace std;
         cout<<"\t\t\t\t\t--8. color gris-------------------------------"<<endl;
         cout<<"\t\t\t\t\t--9. color blanco-----------------------------"<<endl;
         cout<<"\t\t\t\t\t----------------------------------------------"<<endl;
+        cout<<"\t\t\t\t\t---------------------------------------     ";
+
         // leyendo y guardando opcion seleccionada
         cin>>banda3;
           if (banda3>=0 && banda3<=9)
@@ -146,6 +152,8 @@ using namespace std;
         cout<<"\t\t\t\t\t--9. color dorado    x 0.1--------------------"<<endl;
         cout<<"\t\t\t\t\t--10. color plateado x 0.01-------------------"<<endl;
         cout<<"\t\t\t\t\t----------------------------------------------"<<endl;
+        cout<<"\t\t\t\t\t---------------------------------------     ";
+
         // leyendo y guardando opcion seleccionada
         cin>>opBandaMultiplicadora;
           if (opBandaMultiplicadora>=1 && opBandaMultiplicadora<=10)
@@ -178,9 +186,10 @@ using namespace std;
         cout<<"\t\t\t\t\t--5. color morado   0.10% ----------------------"<<endl;
         cout<<"\t\t\t\t\t--6. color gris     0.05% ----------------------"<<endl;
         cout<<"\t\t\t\t\t--7. color dorado   5% -------------------------"<<endl;
-        cout<<"\t\t\t\t\t--8. color plateado 10% ------------------------"<<endl;
-       
+        cout<<"\t\t\t\t\t--8. color plateado 10% ------------------------"<<endl;       
         cout<<"\t\t\t\t\t-----------------------------------------------"<<endl;
+        cout<<"\t\t\t\t\t---------------------------------------     ";
+
         // leyendo y guardando opcion seleccionada
         cin>>tolerancia;
           if (tolerancia>=1 && tolerancia<=8)
@@ -242,7 +251,10 @@ using namespace std;
         cout<<"\t\t\t\t\t--2. K Ohm -----------------------------------"<<endl;
         cout<<"\t\t\t\t\t--3. M Ohm -----------------------------------"<<endl;
         cout<<"\t\t\t\t\t--4. G Ohm -----------------------------------"<<endl;
-       cin>>opMedida;
+        cout<<"\t\t\t\t\t----------------------------------------------"<<endl;
+        cout<<"\t\t\t\t\t---------------------------------------     ";
+
+        cin>>opMedida;
             // coondicional que evlaua las opciones selecionadas por el usuario
            if (opMedida>=1 && opMedida<=4)
         {
@@ -293,6 +305,7 @@ using namespace std;
    do
        {                      
           cout<<"\t\t\t\t\tsi desea realizar otra operacion ingrese (si/no)"<<endl;
+          cout<<"\t\t\t\t\t---------------------------------------     ";
           cin>>subOpcion;
           if (subOpcion=="si")
            {

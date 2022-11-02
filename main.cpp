@@ -1,3 +1,10 @@
+// Sistema de calculo desarrollado por:
+// HUgo Rolando Chenal Alonzo.
+// carne: 4090-12-3918.
+//curso de Algoritmos
+// Universidad Mariano Galvez de Guatemala
+// jornada  diaria vespertina
+
 #include <iostream>
 #include <string>
 #include <stdio.h>
@@ -26,7 +33,6 @@ double concatenacionDe5Bandas(int banda1, int banda2,int banda3, double multi);
 double calculo5bandasConUnidades( double bandasUnidas,int opMedida);
 
 //SECCION DE VARIABLES GLOBALES
-
 
 int main(int argc, char const *argv[])
 {
@@ -98,6 +104,7 @@ int main(int argc, char const *argv[])
         cout<<"\t\t\t\t\t--3. Salir del sistema------------------------"<<endl;
         cout<<"\t\t\t\t\t----------------------------------------------"<<endl;
         // leyendo y guardando opcion seleccionada
+        cout<<"\t\t\t\t\t---------------------------------------     ";
         cin>>tipoBanda;
         // condicional que evalua la tipoBanda seleccionada
         if (tipoBanda>=1 && tipoBanda<=3)

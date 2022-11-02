@@ -47,6 +47,8 @@ double calculoMultiplicador(int opcion);
         cout<<"\t\t\t\t\t--8. color gris------------------------------"<<endl;
         cout<<"\t\t\t\t\t--9. color blanco-----------------------------"<<endl;
         cout<<"\t\t\t\t\t----------------------------------------------"<<endl;
+        cout<<"\t\t\t\t\t---------------------------------------     ";
+
         // leyendo y guardando opcion seleccionada
         cin>>banda1;
           if (banda1>=0 && banda1<=9)
@@ -83,6 +85,8 @@ double calculoMultiplicador(int opcion);
         cout<<"\t\t\t\t\t--8. color gris-------------------------------"<<endl;
         cout<<"\t\t\t\t\t--9. color blanco-----------------------------"<<endl;
         cout<<"\t\t\t\t\t----------------------------------------------"<<endl;
+        cout<<"\t\t\t\t\t---------------------------------------     ";
+
         // leyendo y guardando opcion seleccionada
         cin>>banda2;
           if (banda2>=0 && banda2<=9)
@@ -120,6 +124,8 @@ double calculoMultiplicador(int opcion);
         cout<<"\t\t\t\t\t--9. color gris     x 100000000- -------------"<<endl;
         cout<<"\t\t\t\t\t--10. color blanco  x 1000000000--------------"<<endl;
         cout<<"\t\t\t\t\t----------------------------------------------"<<endl;
+        cout<<"\t\t\t\t\t---------------------------------------     ";
+
         // leyendo y guardando opcion seleccionada
         cin>>opBandaMultiplicadora;
           if (opBandaMultiplicadora>=1 && opBandaMultiplicadora<=10)
@@ -151,6 +157,7 @@ double calculoMultiplicador(int opcion);
        
         cout<<"\t\t\t\t\t-----------------------------------------------"<<endl;
         // leyendo y guardando opcion seleccionada
+        cout<<"\t\t\t\t\t---------------------------------------     ";
         cin>>tolerancia;
           if (tolerancia>=1 && tolerancia<=3)
         {
@@ -189,7 +196,9 @@ double calculoMultiplicador(int opcion);
         cout<<"\t\t\t\t\t--2. K Ohm -----------------------------------"<<endl;
         cout<<"\t\t\t\t\t--3. M Ohm -----------------------------------"<<endl;
         cout<<"\t\t\t\t\t--4. G Ohm -----------------------------------"<<endl;
-       cin>>opMedida;
+        cout<<"\t\t\t\t\t----------------------------------------------"<<endl;
+        cout<<"\t\t\t\t\t---------------------------------------     ";
+        cin>>opMedida;
             // coondicional que evlaua las opciones selecionadas por el usuario
            if (opMedida>=1 && opMedida<=4)
         {
@@ -239,6 +248,7 @@ double calculoMultiplicador(int opcion);
     do
        {                      
           cout<<"\t\t\t\t\tsi desea realizar otra operacion ingrese (si/no)";
+          cout<<"\t\t\t\t\t---------------------------------------     ";
           cin>>subOpcion;
           if (subOpcion=="si")
            {
